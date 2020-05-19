@@ -1,4 +1,16 @@
-baseURL = "http://example.org/"
+baseURL = "https://3xpl0its.xyz"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "3xpl0its.xyz"
 theme = "archie"
+
+# Code syntax
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+# Pagination
+paginate=3
+
+[params]
+    mode="dark"
+    featherIconsCDN=true
