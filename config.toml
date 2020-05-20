@@ -11,6 +11,9 @@ pygmentscodefencesguesssyntax = true
 # Pagination
 paginate=3
 
+[permalinks]
+  posts = "/:year/:month/:title/"
+
 [params]
     mode="dark"
     featherIconsCDN=true
