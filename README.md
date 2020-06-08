@@ -8,3 +8,8 @@ git clone git@github.com:jackcoble/3xpl0its.xyz.git
 cd 3xpl0its.xyz/
 git submodule update --init
 ```
+
+**Update submodules**
+```bash
+git submodule update --recursive --remote
+```
