@@ -1,7 +1,7 @@
 baseURL = "https://blog.3xpl0its.xyz/"
 languageCode = "en-us"
 title = "3xpl0its | Blog"
-theme = "archie"
+theme = "hugo-theme-bulma"
 
 # Code syntax
 pygmentsstyle = "monokai"
