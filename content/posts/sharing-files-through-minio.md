@@ -78,7 +78,7 @@ By adding this snippet into your `Caddyfile` (and adjusting it as necessary), yo
 ```
 # Public MinIO bucket
 s.3xpl0its.xyz {
-  rewrite * /public/{path}
+  rewrite /* /public{path}
   reverse_proxy * localhost:9000
 }
 ```
