@@ -30,7 +30,43 @@ $ mc policy set download minio/public
 Access permission for `minio/public` is set to `download`
 ```
 
-All done! If you upload a file to your bucket, you should now be able to access it externally.
+Lastly, we are going to enforce another policy to disable object listing. Right now, if you were to visit the bucket, it would return a list of all the objects you have stored inside of it. Obviously this isn't ideal as your instance could potentially be scraped by bots to download all of the content. To overcome this, we can write our own policy.
+
+1. In your current directory, create a file named `policy.json`, and paste in this policy.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "*"
+        ]
+      },
+      "Resource": [
+        "arn:aws:s3:::BUCKET/*"
+      ],
+      "Sid": ""
+    }
+  ]
+}
+```
+
+> Be sure to replace 'BUCKET' with your bucket name that you configured earlier.
+
+2. Lastly, we just need to enforce the policy on our bucket.
+
+```bash
+$ mc policy set-json policy.json minio/public
+Access permission for `minio/public` is set from `policy.json`
+```
+
+Great, the new policy should be enforced. If you visit your bucket, you shouldn't be able to see the contents of it. But if you have the exact filename, you should be able to view the file as expected.
 
 ```
 https://minio-instance.com/bucket/file.txt
