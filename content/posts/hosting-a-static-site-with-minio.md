@@ -4,13 +4,13 @@ date: 2020-06-13T19:00:51+01:00
 draft: false
 ---
 
-I've been wanting to have bit more of a play with MinIO. The other day I managed to start streaming from my instance just by using a quick script I threw together, but now I want to get into the realm of hosting static websites with it.
+I've been wanting to have a bit more of a play with MinIO. The other day I managed to start streaming from my instance just by using a quick script I threw together, but now I want to get into the realm of hosting static websites with it.
 
 A static website is a web page that has fixed content. You'd structure and fill in each page of a website using plain old HTML along with your CSS for styling and JavaScript for added functionality. These types of websites are the most basic out there and are the easiest to create. They are published to a web server and simply just work.
 
 [Hugo](https://gohugo.io/) for example is a static site generator. For my blog right now I can just run the `hugo` command and it will compile my blog into a folder that can easily be deployed to the webserver/host of my choice.
 
-If you wish to follow along, you'll need an instance of MinIO, the MinIO Client and Caddy (reverse proxy).
+If you wish to follow along, you'll need an instance of MinIO, the MinIO Client and Caddy (reverse proxy) already configured.
 
 ## Configuring the MinIO Client
 
