@@ -23,16 +23,9 @@ $ mc mb minio/public
 Bucket created successfully `minio/public`.
 ```
 
-2. Next, we need to set the policy of the bucket to read-only. This allows anyone to read the contents of our bucket.
+Next, we are going to enforce a policy to disable object listing. Right now, if you were to visit the bucket, it would return a list of all the objects you have stored inside of it. Obviously this isn't ideal as your instance could potentially be scraped by bots to download all of the content. To overcome this, we can write our own policy.
 
-```bash
-$ mc policy set download minio/public
-Access permission for `minio/public` is set to `download`
-```
-
-Lastly, we are going to enforce another policy to disable object listing. Right now, if you were to visit the bucket, it would return a list of all the objects you have stored inside of it. Obviously this isn't ideal as your instance could potentially be scraped by bots to download all of the content. To overcome this, we can write our own policy.
-
-1. In your current directory, create a file named `policy.json`, and paste in this policy.
+2. In your current directory, create a file named `policy.json`, and paste in this policy.
 
 ```json
 {
@@ -59,7 +52,7 @@ Lastly, we are going to enforce another policy to disable object listing. Right 
 
 > Be sure to replace 'BUCKET' with your bucket name that you configured earlier.
 
-2. Lastly, we just need to enforce the policy on our bucket.
+3. Lastly, we just need to enforce the policy on our bucket.
 
 ```bash
 $ mc policy set-json policy.json minio/public
