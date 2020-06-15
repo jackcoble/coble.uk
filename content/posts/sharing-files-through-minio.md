@@ -65,7 +65,7 @@ Great, the new policy should be enforced. If you visit your bucket, you shouldn'
 https://minio-instance.com/bucket/file.txt
 ```
 
-![Minio Public](/img/sharing-files-through-minio/minio-public.png)
+![Minio Public](https://s.3xpl0its.xyz/2020-06-14/minio-public.png)
 
 Why stop here though? At the moment, we can only access our file by referring to the bucket and then the file name. Depending on if you have nested buckets, the URL to access the file could be extremely long. This is where we can make use of Caddy!
 
@@ -87,7 +87,7 @@ Please be sure to adjust `reverse_proxy` to the location of your MinIO instance.
 
 If you restart your Caddyfile, you should be able to view your files through your subdomain without the need of your bucket to be in the URL path.
 
-![Minio Public Caddy](/img/sharing-files-through-minio/minio-public-caddy.png)
+![Minio Public Caddy](https://s.3xpl0its.xyz/2020-06-14/minio-public-caddy.png)
 
 ## Writing an upload script
 

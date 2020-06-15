@@ -24,10 +24,10 @@ My most recent release of Upload has a couple of new features to accomodate for 
 
 These changes are what allowed me to make Upload usable on a smartphone. I can now visit the URL of where my Upload instance is hosted and then upload any file from my device! First of all I'd be greeted with an authentication page. I'd enter in my password and then a cookie would be stored on my device that is valid for a year.
 
-![Authentication](/img/upload-a-static-file-server/authentication.png)
+![Authentication](https://s.3xpl0its.xyz/2020-06-08/authentication.png)
 
 Once I have logged in, I am presented with a simplistic page that allows me to upload any file I want!
 
-![File Upload](/img/upload-a-static-file-server/file-upload.png)
+![File Upload](https://s.3xpl0its.xyz/2020-06-08/file-upload.png)
 
 Some might say that it is a really simple solution, but it is all I needed. Yes, an AWS bucket could've been used here, but I felt like using the existing servers I've got for the year. If it helps me easily share files without the need of a cloud provider, then I am satisfied. Sorry for those who felt this might be a tutorial or an explanation post. If anything, it's more of a showcase of what I've been working on.

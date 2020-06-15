@@ -79,7 +79,7 @@ Usage is quite simple, its the same as how I described earlier on. If you have e
 ./minio-mpv <tv-show> <season-ep> # Billions S01E01
 ```
 
-![MPV](/img/streaming-from-minio-to-mpv/mpv.png)
+![MPV](https://s.3xpl0its.xyz/2020-06-10/mpv.png)
 
 Tada, it works! 🎉 It might not be perfect, but it'll do for now. Over time I might improve the script to make it a bit more robust as there are still some issues with certain file names. If I can do that, then I'll also put it on my GitHub.
 

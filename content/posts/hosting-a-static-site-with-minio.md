@@ -68,7 +68,7 @@ https://m.3xpl0its.xyz/static/index.html
 
 If all went well, you should see your website!
 
-![Website Demo](/img/hosting-a-static-site-with-minio/minio-static-website.png)
+![Website Demo](https://s.3xpl0its.xyz/2020-06-13/minio-static-website.png)
 
 ## Serving the website behind Caddy
 
@@ -93,7 +93,7 @@ Here's a basic breakdown of what this block does:
 
 If you adjusted the snippet correctly, you should be able to access your statically hosted website from your domain!
 
-![Website Behind Caddy](/img/hosting-a-static-site-with-minio/minio-website-behind-caddy.png)
+![Website Behind Caddy](https://s.3xpl0its.xyz/2020-06-14/minio-website-behind-caddy.png)
 
 ## That's a wrap!
 

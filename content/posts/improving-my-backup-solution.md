@@ -13,7 +13,7 @@ You could say I got lucky though. Whilst my heart was racing, I remembered I had
 
 # Restic
 
-![Restic Logo](/img/improving-my-backup-solution/restic.png)
+![Restic Logo](https://s.3xpl0its.xyz/2020-06-08/restic.png)
 
 Restic is a backup tool written in Go that is (in my eyes) extremely fast and efficient. It appealed to me as you can make backups to multiple storage mediums. Whether that is a local hard drive or an S3 storage server, Restic has support for a lot! My personal backup solution now evolves around 2 Minio servers. They are both self-hosted and running in Docker. One is hosted on another server on the local network, and the other is hosted on a VPS as an off-site backup. In the event of a mass deletion frenzy on my personal machines, I have hope that I can pull a recent backup from the local server. If something happened to that, then I am relying on my off-site backup.
 
@@ -61,7 +61,7 @@ Again, make sure to change the location of these files. You can also change how 
 
 Once you've got that all configured, you should soon see some backups/snapshots being made.
 
-![Restic Snapshots](/img/improving-my-backup-solution/restic-snapshots.png)
+![Restic Snapshots](https://s.3xpl0its.xyz/2020-06-08/restic-snapshots.png)
 
 When it comes to restoring from a backup, the [documentation](https://restic.readthedocs.io/en/latest/050_restore.html) outlines what you need to, and they'll do a better job of explaining it over me. 😅
 
