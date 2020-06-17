@@ -231,6 +231,12 @@ $ mkdir ~/.config/nvim/plug-config
 $ touch ~/.config/nvim/plug-config/coc.vim
 ```
 
+Whilst you are at it, don't forget to source the CoC Neovim configuration file. Add the following to your `init.vim`.
+
+```vim
+source $HOME/.config/nvim/plug-config/coc.vim
+```
+
 #### Configuration
 In order to configure CoC, I suggest that you head over to the [README](https://github.com/neoclide/coc.nvim/blob/master/README.md) and grab the example. It would be far too large to paste here :)
 
