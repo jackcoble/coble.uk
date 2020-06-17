@@ -34,6 +34,8 @@ You'll be prompted to answer a few questions. The first question will ask if you
 * Verification code - this is the first code that is specific to the QR code.
 * Backup (emergency) codes - if you happen to lose your authenticator device, you can use these codes to gain access to your server.
 
+> Take a note of those Backup codes. They are your only saving grace if you lose your TOTP authenticator device. Keep them written down and stored somewhere safe! :)
+
 ![Google Authenticator](https://s.3xpl0its.xyz/2020-06-17/1592406959_1270x1002.png)
 
 I'm going to try and keep this part simple as it doesn't make sense for me to show answering all of the questions. Just answer yes (`y`) to all questions except the one I'm showcasing below.
