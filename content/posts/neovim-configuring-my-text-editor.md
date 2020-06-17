@@ -14,6 +14,8 @@ I felt like I should document my Neovim setup for my personal reference in futur
 1. [Getting Started]({{< relref "#getting-started" >}})
 2. [The Basics]({{< relref "#the-basics" >}})
 3. [Themes]({{< relref "#themes" >}})
+4. [Additional Plugins]({{< relref "#additional-plugins" >}})
+    * [Conquerer of Completion (CoC)]({{< relref "#conquerer-of-completion-coc" >}})
 
 ## Getting Started
 So as mentioned, I use Neovim as my text editor. It is a fork of Vim which is more modernised and aims to provide a better OOTB (out of the box) experience for users. This section will focus on installing Neovim, a plugin manager and installing a few basic plugins to get us started.
@@ -208,4 +210,64 @@ autocmd vimenter * colorscheme gruvbox
 We need to source the file in our `init.vim` too.
 ```vim
 source $HOME/.config/nvim/themes/gruvbox.vim
+```
+
+## Additional Plugins
+### Conquerer of Completion (CoC)
+
+CoC is an intellisense engine for Neovim. For further explanation/documentation, you can visit the [GitHub repository](https://github.com/neoclide/coc.nvim). I'll be using this primarily for Go, as that is my programming language of choice at the moment.
+
+#### Installation
+To install it, add the following to your `~/.config/nvim/vim-plug/plugins.vim` file.
+
+```vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+```
+
+Next, we need to make a directory for our CoC configuration.
+
+```bash
+$ mkdir ~/.config/nvim/plug-config
+$ touch ~/.config/nvim/plug-config/coc.vim
+```
+
+#### Configuration
+In order to configure CoC, I suggest that you head over to the [README](https://github.com/neoclide/coc.nvim/blob/master/README.md) and grab the example. It would be far too large to paste here :)
+
+Put the example configuration that is provided into your `~/.config/nvim/plug-config/coc.vim` file.
+
+#### Extensions
+As I said, I am a Go programmer at the moment, so I will primarly be using the Go language extension for CoC. However on top of that, I will install a few more plugins for other languages that I might use.
+
+Open up Neovim and execute the following.
+
+```vim
+:CocInstall coc-json coc-go coc-snippets coc-vimlsp
+```
+
+The above are plugins for:
+
+* JSON
+* Go
+* Language snippers
+* Vim script
+
+#### Language Server Configuration
+With CoC, we can configure the language servers we have installed. To get started, run the following command (you only need to run this command once).
+
+```vim
+:CocConfig
+```
+
+> This will create and open a file located at `~/.config/nvim/coc-settings.json`.
+
+Paste in the configuration below. You can look at the language server documentation for specific options.
+
+```json
+{
+    "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "go"],
+    "go.goplsOptions": {
+        "completeUnimported": true
+    }
+}
 ```
