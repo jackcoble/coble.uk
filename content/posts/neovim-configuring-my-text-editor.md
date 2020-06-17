@@ -13,6 +13,7 @@ I felt like I should document my Neovim setup for my personal reference in futur
 ## Table of Contents
 1. [Getting Started]({{< relref "#getting-started" >}})
 2. [The Basics]({{< relref "#the-basics" >}})
+3. [Themes]({{< relref "#themes" >}})
 
 ## Getting Started
 So as mentioned, I use Neovim as my text editor. It is a fork of Vim which is more modernised and aims to provide a better OOTB (out of the box) experience for users. This section will focus on installing Neovim, a plugin manager and installing a few basic plugins to get us started.
@@ -177,4 +178,34 @@ We need to source the keybindings. Add this to `init.vim`.
 
 ```vim
 source $HOME/.config/nvim/keys/mappings.vim
+```
+
+## Themes
+### Installing a Theme
+In order to make Neovim look a lot nicer than the defaults, we can install some themes. I personally like the look of [gruvbox](https://github.com/morhetz/gruvbox), so that is what I will install.
+
+Open `~/.config/nvim/vim-plug/plugins.vim` and add the following.
+
+```vim
+Plug 'morhetz/gruvbox'
+```
+
+Then you can run the `:PlugInstall` command.
+
+### Configuring a Theme
+Create a directory for our themes that we want to configure, and then create a file for the name of our theme. This is for making use of the customisation that the Gruvbox theme offers.
+
+```bash
+$ mkdir ~/.config/nvim/themes
+$ touch ~/.config/nvim/themes/gruvbox.vim
+```
+
+Inside `~/.config/nvim/themes/gruvbox.vim`, add the following.
+```vim
+autocmd vimenter * colorscheme gruvbox
+```
+
+We need to source the file in our `init.vim` too.
+```vim
+source $HOME/.config/nvim/themes/gruvbox.vim
 ```
