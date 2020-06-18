@@ -362,3 +362,14 @@ We can also map some bindings in `~/.config/nvim/plug-config/coc.vim`.
 nmap <space>e :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 ```
+
+#### Fonts
+If you are having trouble seeing certain icons, it is likely that you need to install a NerdFont. I personally like Fira Code, so I will install that.
+
+```bash
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+unzip FiraCode.zip -d ~/.fonts
+fc-cache -fv
+```
+
+Then in your terminal, set the font to be a Nerd variant of Fira Code.
