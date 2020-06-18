@@ -10,15 +10,18 @@ draft: false
 
 I felt like I should document my Neovim setup for my personal reference in future and to also help others if they'd like to copy a few bits from my setup. As I feel like that this will be a constantly evolving post, I'll provide a table of contents for you to pick and choose what you want to read.
 
+> A big thanks to [Christian Chiarulli](https://github.com/ChristianChiarulli) for inspiring me to use the modular setup to configure my Neovim. That's where the idea originally came from!
+
 ## Table of Contents
 1. [Getting Started]({{< relref "#getting-started" >}})
 2. [The Basics]({{< relref "#the-basics" >}})
 3. [Themes]({{< relref "#themes" >}})
 4. [Additional Plugins]({{< relref "#additional-plugins" >}})
     * [Conquerer of Completion (CoC)]({{< relref "#conquerer-of-completion-coc" >}})
+    * [Airline]({{< relref "#airline" >}})
 
 ## Getting Started
-So as mentioned, I use Neovim as my text editor. It is a fork of Vim which is more modernised and aims to provide a better OOTB (out of the box) experience for users. This section will focus on installing Neovim, a plugin manager and installing a few basic plugins to get us started.
+So as mentioned, I use Neovim as my text editor. It is a fork of Vim which is more modernised and aims to provide a better out of the box experience for users. This section will focus on installing Neovim, a plugin manager and installing a few basic plugins to get us started.
 
 ### Installing Neovim
 Packages for Neovim are available for the majority of mainstream operating systems such as Linux, MacOS and Windows. I use Linux, so I'll fetch the Neovim package using my package manager.
@@ -134,7 +137,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 cmap w!! w !sudo tee %
 ```
 
-We need to source the settings. Add this to `init.vim`.
+We need to source the settings. Add this to `~/.config/nvim/init.vim`.
 
 ```vim
 source $HOME/.config/nvim/general/settings.vim
@@ -176,7 +179,7 @@ nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 ```
 
-We need to source the keybindings. Add this to `init.vim`.
+We need to source the keybindings. Add this to `~/.config/nvim/init.vim`.
 
 ```vim
 source $HOME/.config/nvim/keys/mappings.vim
@@ -207,7 +210,7 @@ Inside `~/.config/nvim/themes/gruvbox.vim`, add the following.
 autocmd vimenter * colorscheme gruvbox
 ```
 
-We need to source the file in our `init.vim` too.
+We need to source the file in our `~/.config/nvim/init.vim` too.
 ```vim
 source $HOME/.config/nvim/themes/gruvbox.vim
 ```
@@ -224,6 +227,8 @@ To install it, add the following to your `~/.config/nvim/vim-plug/plugins.vim` f
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ```
 
+You can also run `:PlugInstall` here too.
+
 Next, we need to make a directory for our CoC configuration.
 
 ```bash
@@ -231,7 +236,7 @@ $ mkdir ~/.config/nvim/plug-config
 $ touch ~/.config/nvim/plug-config/coc.vim
 ```
 
-Whilst you are at it, don't forget to source the CoC Neovim configuration file. Add the following to your `init.vim`.
+Whilst you are at it, don't forget to source the CoC Neovim configuration file. Add the following to your `~/.config/nvim/init.vim`.
 
 ```vim
 source $HOME/.config/nvim/plug-config/coc.vim
@@ -276,4 +281,55 @@ Paste in the configuration below. You can look at the language server documentat
         "completeUnimported": true
     }
 }
+```
+
+### Airline
+Airline gives you a cool looking bar at the bottom of your Neovim session.
+
+#### Installation
+Add the following to your `~/.config/nvim/vim-plug/plugins.vim` file.
+
+```vim
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+```
+
+Go ahead and run `:PlugInstall`
+
+#### Configuration
+Create a theme file for Airline.
+
+```bash
+touch ~/.config/nvim/themes/airline.vim
+```
+
+Add in the following.
+
+```vim
+" enable tabline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#right_sep = ''
+let g:airline#extensions#tabline#right_alt_sep = ''
+
+" enable powerline fonts
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+
+" Switch to your current theme
+let g:airline_theme = 'gruvbox'
+
+" Always show tabs
+set showtabline=2
+
+" We don't need to see things like -- INSERT -- anymore
+set noshowmode
+```
+
+Lastly, source your theme file by adding this to `~/.config/nvim/init.vim`
+
+```vim
+source $HOME/.config/nvim/themes/airline.vim
 ```
