@@ -19,6 +19,7 @@ I felt like I should document my Neovim setup for my personal reference in futur
 4. [Additional Plugins]({{< relref "#additional-plugins" >}})
     * [Conquerer of Completion (CoC)]({{< relref "#conquerer-of-completion-coc" >}})
     * [Airline]({{< relref "#airline" >}})
+    * [CoC Explorer]({{< relref "#coc-explorer" >}})
 
 ## Getting Started
 So as mentioned, I use Neovim as my text editor. It is a fork of Vim which is more modernised and aims to provide a better out of the box experience for users. This section will focus on installing Neovim, a plugin manager and installing a few basic plugins to get us started.
@@ -62,9 +63,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Language Syntax Support
     Plug 'sheerun/vim-polyglot'
-
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
 
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
@@ -332,4 +330,35 @@ Lastly, source your theme file by adding this to `~/.config/nvim/init.vim`
 
 ```vim
 source $HOME/.config/nvim/themes/airline.vim
+```
+
+### CoC Explorer
+This plugin makes use of CoC that we've already got installed. Without it, the plugin won't work.
+
+#### Installation
+Inside Neovim, go ahead and run the following.
+
+```vim
+:CocInstall coc-explorer
+```
+
+#### Configuration
+We can edit `~/.config/nvim/coc-settings.json` to configure CoC Explorer.
+
+```json
+"explorer.width": 30,
+"explorer.icon.enableNerdfont": true,
+"explorer.previewAction.onHover": false,
+"explorer.keyMappings": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+}
+```
+
+We can also map some bindings in `~/.config/nvim/plug-config/coc.vim`.
+
+```vim
+" CoC Explorer
+nmap <space>e :CocCommand explorer<CR>
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 ```
