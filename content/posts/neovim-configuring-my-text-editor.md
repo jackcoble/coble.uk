@@ -1,7 +1,7 @@
 ---
 title: "Neovim - Configuring my Text Editor"
 date: 2020-06-17T19:30:35+01:00
-draft: false
+draft: true
 ---
 
 <!-- Access draft from this link: http://localhost:1313/2020/06/neovim-configuring-my-text-editor -->
