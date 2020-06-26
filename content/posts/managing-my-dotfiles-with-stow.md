@@ -23,7 +23,7 @@ In order to make Stow work, my dotfiles directory structure needed a bit of modi
 If I was to run the `stow` command right now under this directory structure, it would fail to install my dotfiles. To make it work, I had to follow this folder structure.
 
 ```
-Application Name --> .config --> Application Config Files --> Application Name
+Application Name --> .config --> Application Name --> Application Config Files 
 ```
 
 As opposed to:
