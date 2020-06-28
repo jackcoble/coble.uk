@@ -287,7 +287,7 @@ kind: pipeline
 name: default
 
 steps:
-  - name: build
+  - name: test
     image: golang
     commands:
       - go test -v ./...
@@ -297,11 +297,32 @@ trigger:
     - master
 ```
 
-If you go ahead and push all of those files to your Git repository, Drone should detect that there is a configuration file.
+You should now go ahead and push these files to your Git repository. We are going to add our repository to Drone next.
 
-### Triggering the CI pipeline
+### Adding our repository to Drone CI
+If you visit the URL of your Drone instance, you might find that you'll have to sync your repositories. You can do this simply clicking the "Sync" button at the top right of the page. This will ask you if you want to activate Drone for any new repositories.
+
+![Drone Sync](https://s.3xpl0its.xyz/2020-06-28/Screenshot-from-2020-06-28-18-33-27.png)
+
+Once Drone has synced the repositories, you will now have to activate it. This can be done by clicking on the "Activate" button next to your repository.
+
+![Activate Drone](https://s.3xpl0its.xyz/2020-06-28/Screenshot-from-2020-06-28-18-34-45.png)
+
+You will then be taken to a settings page for your repository. Most of the time the defaults are fine, so I would personally leave them as they are. Our Drone configuration file (`.drone.yml`) contains everything we need anyway. You can just click on the "Save" button.
+
+![Drone Settings](https://s.3xpl0its.xyz/2020-06-28/Screenshot-from-2020-06-28-18-37-35.png)
+
+Any changes you now make will automatically trigger the Drone CI. In the configuration file I have set Drone to trigger whenever a push is made to the `master` branch.
+
+![Drone Trigger](https://s.3xpl0its.xyz/2020-06-28/Screenshot-from-2020-06-28-18-44-24.png)
+
+If all went well, the Drone CI pipeline should succeed as I wrote a valid test for the project. If you wish to see the results yourself, feel free to visit [here](https://drone.feirm.com/jackcoble/drone-ci-example/1).
+
+![Drone Success](https://s.3xpl0its.xyz/2020-06-28/Screenshot-from-2020-06-28-18-47-58.png)
 
 ## Conclusion
 There we have it! Our own Gitea instance and CI operating on our own hardware, with the added benefit of backups/mirrors being made to GitHub. I think it is a pretty great setup and I will continue using it for the forseeable future.
+
+There are also plugins available for Drone CI too! I am currently using one called [drone-discord](https://github.com/appleboy/drone-discord), which will send a notification to a Discord channel via Webhook. It's a nice alternative to use instead of having to check the Drone CI status page all the time.
 
 A big thanks to Daniel (LyteDev) for providing the post-receive hook. The original post for that can be found [here](https://lytedev.io/blog/mirroring-gitea-to-other-repository-management-services/).
