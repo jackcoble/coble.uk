@@ -16,6 +16,7 @@ paginate=5
   posts = "/:year/:month/:title/"
 
 [params]
+  favicon = "favicon.jpg"
   [[params.social]]
     name = "fas fa-globe"
     url = "https://3xpl0its.xyz"
@@ -28,3 +29,6 @@ paginate=5
   [[params.social]]
     name = "fas fa-rss"
     url = "https://blog.3xpl0its.xyz/index.xml"
+  [[params.social]]
+    name = "fab fa-bitcoin"
+    url = "bitcoin:36e4TgTebYGse7w7NZp8mf1RMrjzQCfePk"
