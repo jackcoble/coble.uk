@@ -31,4 +31,4 @@ paginate=5
     url = "https://blog.3xpl0its.xyz/index.xml"
   [[params.social]]
     name = "fab fa-bitcoin"
-    url = "bitcoin:36e4TgTebYGse7w7NZp8mf1RMrjzQCfePk"
+    url = "/addresses.txt"
