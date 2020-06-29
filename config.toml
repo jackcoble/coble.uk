@@ -14,3 +14,17 @@ paginate=5
 
 [permalinks]
   posts = "/:year/:month/:title/"
+
+[params]
+  [[params.social]]
+    name = "fas fa-globe"
+    url = "https://3xpl0its.xyz"
+  [[params.social]]
+    name = "fab fa-git"
+    url = "https://github.com/jackcoble"
+  [[params.social]]
+    name = "fab fa-keybase"
+    url = "https://keybase.io/jackcoble"
+  [[params.social]]
+    name = "fas fa-rss"
+    url = "https://blog.3xpl0its.xyz/index.xml"
