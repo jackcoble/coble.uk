@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<!DOCTYPE html>
+<html>
+{{ partial "head" . }}
+
+<body>
+    <div class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered is-multiline">
+                    <div class="column is-6">
+                        {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+                        {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+                        {{ range $paginator.Pages }}
+                        <h1 class="title"><a class="has-text-dark" href="{{ .RelPermalink }}">{{.Title}}</a>
+                        </h1>
+                        {{ if .Draft }}
+                        <span class="tag is-warning">Draft</span>
+                        {{ end }}
+                        <div class="content">
+                            {{ if isset .Params "description" }}
+                            {{ .Description }}
+                            {{ else }}
+                            {{ .Summary }}..
+                            {{ end }}
+                        </div>
+                        <p class="help">
+                            <time>
+                                {{ dateFormat "Jan 2, 2006" .Date }}
+                            </time>
+                        </p>
+                        <br>
+                        <a href="{{ .RelPermalink }}" class="is-link">Read More</a>
+                        <hr />
+                        {{ end }}
+                        {{ template "partials/paginator.html" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+{{ end }}
