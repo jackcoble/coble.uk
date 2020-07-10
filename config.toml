@@ -17,6 +17,8 @@ paginate=5
 
 [params]
   favicon = "favicon.jpg"
+
+  # Social
   [[params.social]]
     name = "fas fa-globe"
     url = "https://3xpl0its.xyz"
@@ -32,3 +34,17 @@ paginate=5
   [[params.social]]
     name = "fab fa-bitcoin"
     url = "/addresses.txt"
+
+  # Navigation
+  [[params.navigation]]
+    name = "Home"
+    url = "/"
+  [[params.navigation]]
+    name = "Blog"
+    url = "/blog"
+  [[params.navigation]]
+    name = "About"
+    url = "/about"
+  [[params.navigation]]
+    name = "Contact"
+    url = "/contact"
