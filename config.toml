@@ -1,6 +1,6 @@
-baseURL = "https://blog.3xpl0its.xyz/"
+baseURL = "https://3xpl0its.xyz/"
 languageCode = "en-gb"
-title = "3xpl0its | Blog"
+title = "3xpl0its"
 theme = "bulma"
 summaryLength = 30
 
