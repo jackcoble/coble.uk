@@ -11,4 +11,4 @@ rm -rf $PWD/public/*
 /usr/bin/hugo
 
 # Copy the blog to the folder on my server to be served through Caddy
-scp -r $PWD/public/* arrow:/home/jack/Feirm-Caddy/static/blog
+scp -r $PWD/public/* arrow:/home/jack/Feirm-Caddy/static/3xpl0its.xyz
