@@ -25,12 +25,6 @@ paginate=5
   [[params.navigation]]
     name = "Blog"
     url = "/blog"
-  # [[params.navigation]]
-  #   name = "About"
-  #   url = "/about"
-  # [[params.navigation]]
-  #   name = "Contact"
-  #   url = "/contact"
   [[params.navigation]]
     name = "RSS Feed"
     url = "/index.xml"
