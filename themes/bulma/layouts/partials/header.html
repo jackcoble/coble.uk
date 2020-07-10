@@ -4,7 +4,6 @@
       <h1 class="title has-text-weight-light has-text-white">
         <a class="has-text-white" href="/">{{ .Site.Title }}</a>
       </h1>
-
       <!-- Navigation -->
       <div class="tabs is-boxed is-centered">
         <ul>
@@ -15,16 +14,6 @@
           {{ end }}
         </ul>
       </div>
-
-      <!-- Social Media -->
-      {{ range .Site.Params.social}}
-      <span class="icon">
-        <a href="{{ .url }}">
-          <i class="{{ .name }}"></i>
-        </a>
-      </span>
-      {{ end }}
-
     </div>
   </div>
 </div>
