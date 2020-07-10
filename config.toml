@@ -19,8 +19,8 @@ title = "3xpl0its"
     name = "Links"
     url = "/links"
   [[params.navigation]]
-    name = "RSS Feed"
-    url = "/index.xml"
-  [[params.navigation]]
     name = "Contact"
     url = "/contact"
+  [[params.navigation]]
+    name = "RSS"
+    url = "/index.xml"
