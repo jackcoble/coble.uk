@@ -3,6 +3,9 @@ Welcome to my personal website and blog! I also host a variety of other things t
 
 Other than working on this site, I love to program things. Something I've been especially fond of for a few years now are decentralised applications. I would love to live in a world where your every-day applications have no central point of failure or control. Because of that, you might find me contributing to open source projects that are building on top of blockchain technology.
 
+# Recent Blog Posts
+{{< recent-posts >}}
+
 # Why 3xpl0its?
 3xpl0its is the name of a Mr. Robot episode - S01E05 to be precise. This episode revolved around vulnerabilities and puts an emphasis on the fact that we all have weaknesses. As stated in the episode, "people make the best exploits". If you are interested in a review of this specific episode, here is a link to one provided by [IGN](https://www.ign.com/articles/2015/07/23/mr-robot-3xpl0itswmv-review).
 
