@@ -14,6 +14,6 @@ Below are a bunch of blogs and YouTube channels that I follow. For each link, I'
 * [YouTube: Kai Hendry](https://www.youtube.com/user/kaihendry) [(RSS)](https://www.youtube.com/feeds/videos.xml?channel_id=UCFzGyNKXPAglNq28qWYTDFA)
 * [YouTube: Wolfgang's Channel](https://www.youtube.com/channel/UCsnGwSIHyoYN0kiINAGUKxg) [(RSS)](https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg)
 
-### No RSS Found ☹️
+### No RSS Found 🙁
 Below are the websites that I cannot find an RSS feed for
 * [Petr Hejna](https://petrhejna.org/)
