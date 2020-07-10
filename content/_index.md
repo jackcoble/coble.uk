@@ -1,19 +1,10 @@
 # Welcome
-Welcome to my personal website and blog! I like to use this space as a place to put all of my guides, notes and random ideas.
+Welcome to my personal website and blog! I also host a variety of other things too - MinIO, Git and Drone CI are just a few. I'll leave a link to any services that I host/use at the top of this page. You can also find me over at [Mastodon](https://mastodon.technology/@jackcoble) if you'd like to ask me any questions or follow me.
 
-Other than this, I like to program things; especially decentralised applications on top of blockchains or other P2P networks. Data hoarding is also another one of my hobbies. I love to collect all things digital!
+Other than working on this site, I love to program things. Something I've been especially fond of for a few years now are decentralised applications. I would love to live in a world where your every-day applications have no central point of failure or control. Because of that, you might find me contributing to open source projects that are building on top of blockchain technology.
 
-# Contact
-If you would like to contact me to discuss anything or you are just interested in what I do, feel free to visit the platforms I've got listed below:
+# Why 3xpl0its?
+3xpl0its is the name of a Mr. Robot episode - S01E05 to be precise. This episode revolved around vulnerabilities and puts an emphasis on the fact that we all have weaknesses. As stated in the episode, "people make the best exploits". If you are interested in a review of this specific episode, here is a link to one provided by [IGN](https://www.ign.com/articles/2015/07/23/mr-robot-3xpl0itswmv-review).
 
-* [GitHub](https://github.com/jackcoble)
-* [Keybase](https://keybase.io/jackcoble)
-* [Mastodon](https://mastodon.technology/@jackcoble)
-
-# Donations
-Although not necessary, I love cryptocurrency too. If you want to support my work, please feel free to tip me using the Brave Browser, or my cryptocurrency addresses below. (I am not expecting anything!)
-
-* Bitcoin - 36e4TgTebYGse7w7NZp8mf1RMrjzQCfePk
-* Ethereum - 0xB6FeAA7b2766489b11CBe5d3c3df276A1cA33Da3
-
-> Please note that [Brave users](https://brave.com/xpl395) can donate BAT to any of my websites.
+# Disclaimer
+This website is self hosted on "the cloud" using hardware that I have access to. Therefore, there is always a possibility of an update going bad or that I might even accidentally wipe this server (anything is possible). If you'd like to view content from this site in the future, I'd suggest archiving it or cloning the [GitHub](https://github.com/jackcoble/3xpl0its.xyz) so that you can use [Hugo](https://gohugo.io/) to build it yourself.
