@@ -10,31 +10,24 @@
             <div class="container">
                 <div class="columns is-centered is-multiline">
                     <div class="column is-6">
-                        {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-                        {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
-                        {{ range $paginator.Pages }}
-                        <h1 class="title"><a class="has-text-dark" href="{{ .RelPermalink }}">{{.Title}}</a>
-                        </h1>
-                        {{ if .Draft }}
-                        <span class="tag is-warning">Draft</span>
-                        {{ end }}
                         <div class="content">
-                            {{ if isset .Params "description" }}
-                            {{ .Description }}
-                            {{ else }}
-                            {{ .Summary }}..
+                            <h1 class="title has-text-weight-light">Blog</h1>
+                            <p>On this page, you can find a collection of all my blog posts since the inception of this website. What I write about is mostly technology - Linux, programming and self-hosting are a few topics that I love to talk about.</p>
+                            {{ range (where .Data.Pages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
+                            <h2 class="subtitle has-text-weight-light">{{ .Key }}</h2>
+                            <ul>
+                                {{ range .Pages.ByPublishDate.Reverse }}
+                                <li>
+                                    <p>
+                                        {{ dateFormat "02-01-2006" .Date }}
+                                        &nbsp;
+                                        <a href="{{ .RelPermalink }}" class="is-link">{{ .Title }}</a>
+                                    </p>
+                                </li>
+                                {{ end }}
+                            </ul>
                             {{ end }}
                         </div>
-                        <p class="help">
-                            <time>
-                                {{ dateFormat "Jan 2, 2006" .Date }}
-                            </time>
-                        </p>
-                        <br>
-                        <a href="{{ .RelPermalink }}" class="is-link">Read More</a>
-                        <hr />
-                        {{ end }}
-                        {{ template "partials/paginator.html" . }}
                     </div>
                 </div>
             </div>
