@@ -9,9 +9,6 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-# Pagination
-paginate=5
-
 [permalinks]
   blog = "/blog/:year/:month/:title/"
 
