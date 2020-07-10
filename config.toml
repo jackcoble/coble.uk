@@ -1,7 +1,7 @@
 baseURL = "https://blog.3xpl0its.xyz/"
 languageCode = "en-gb"
 title = "3xpl0its | Blog"
-theme = "hugo-theme-bulma"
+theme = "bulma"
 summaryLength = 30
 
 # Code syntax
