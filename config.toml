@@ -13,7 +13,7 @@ pygmentscodefencesguesssyntax = true
 paginate=5
 
 [permalinks]
-  posts = "/:year/:month/:title/"
+  posts = "/blog/:year/:month/:title/"
 
 [params]
   favicon = "favicon.jpg"
