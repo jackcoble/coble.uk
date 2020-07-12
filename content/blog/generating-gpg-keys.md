@@ -47,7 +47,7 @@ Now that I've generated my new GPG key, it would be the perfect time to generate
 $ gpg --gen-revoke --armor --output=revocation-certificate.asc <user-id>
 ```
 
-I used my email address as my primary identifier for my GPG key, so I would replace `<user-id>` to be `jackcoble@tutanota.com`.
+I used my email address as my primary identifier for my GPG key, so I would replace `<user-id>` to be `jack@3xpl0its.xyz`.
 
 After executing that command, you should now have a revocation certificate. Great!
 
@@ -55,7 +55,7 @@ After executing that command, you should now have a revocation certificate. Grea
 The whole idea of using a Master Key for day-to-day actions goes against its purpose. By making use of Subkeys, you can keep your master key offline for as long as possible. Additionally, they make it far easier to issue a new key and revoke existing ones in the event that they are compromised. As mentioned in Paritybit's article, I will also be generating individual subkeys for signing and encryption. This can be done executing the following command.
 
 ```bash
-$ gpg --edit-key --expert jackcoble@tutanota.com
+$ gpg --edit-key --expert jack@3xpl0its.xyz
 > addkey
 ```
 
@@ -70,7 +70,7 @@ It would be catastrophic if I was to loose access to my master key and the revoc
 In order to create a physical backup, I made use of a tool called `paperkey`. It is a command line utility that allows you to export GPG keys onto paper. This process is relatively simple and only relies on a few of commands.
 
 ```bash
-$ gpg --export-secret-key jackcoble@tutanota.com > privkey.gpg
+$ gpg --export-secret-key jack@3xpl0its.xyz > privkey.gpg
 $ paperkey --secret-key privkey.gpg --output printed.txt
 $ rm privkey.gpg printed.txt
 ```
@@ -85,7 +85,7 @@ Now onto the digital backup medium. I am making use of USB flash drives, SD card
 First of all, I exported my master key using the following command.
 
 ```bash
-$ gpg --export-secret-keys --armor jackcoble@tutanota.com > master.asc
+$ gpg --export-secret-keys --armor jack@3xpl0its.xyz > master.asc
 ```
 
 Making use of GPG for encryption, I encrypted my exported master key as well as my revocation certificate using a random password that I generated from within my password manager.
@@ -102,7 +102,7 @@ Lastly, I copied both of the encrypted files to my digital storage mediums. I am
 One of the final steps to my GPG setup is to upload my public key to a keyserver. This is ideal as it allows for others on the internet to discover my public key, and it also makes it easier when it comes to restoring my master key from a physical backup. `paperkey` removes the public key parts from my private key in order to keep it short, so I need it when restoring a physical backup. I should be able to visit any keyserver and easily be able to retrieve my public key. Uploading my public key can easily be done from the command line.
 
 ```bash
-$ gpg --export jackcoble@tutanota.com | curl -T - https://keys.openpgp.org
+$ gpg --export jack@3xpl0its.xyz | curl -T - https://keys.openpgp.org
 ```
 
 Once I executed executed the above, I was prompted to verify my public key by clicking on the link found in the output. Once I did this, my public key was searchable by email address on the keyserver.
