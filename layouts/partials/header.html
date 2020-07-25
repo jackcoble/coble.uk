@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>{{ .Site.Title }}</title>
+	<title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 	<base href="/">
 	<link rel="stylesheet" href="css/bulma.min.css">
 	<link rel="shortcut icon" href="img/favicon.jpg" type="image/jpg">
