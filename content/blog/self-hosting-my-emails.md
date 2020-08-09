@@ -4,6 +4,8 @@ date: 2020-07-13T19:35:53+01:00
 draft: false
 ---
 
+> As of 9th August 2020, I am no longer self-hosting my emails. Instead, I decided to retire the mail-server and add this domain to my Tutanota account. My primary issue was that any email I sent would be marked as spam by the recipient. This could be resolved by making use of an SMTP relay such as SendGrid, but that is a project for another day. I may revisit this project in the future though, so not all hope is lost!
+
 Over the past couple of days, I have wanted to start self-hosting my emails, and for good this time. I'd previously configured an email server as part of a project I am currently working on. The functionality was nothing fancy. An email just needed to be sent to confirm the creation of a user account. However, since I was looking at setting up a mailserver for my personal use, I figure that I would to need give it a bit more care as opposed to just leaving it. After all, this could potentially be the home for the majority of my emails if it all goes well.
 
 ## Why would I want to host my own Email?
