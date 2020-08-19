@@ -11,6 +11,7 @@ in a few places.
 
 - E-Mail: [hello@jackk.xyz](mailto:hello@jackk.xyz)
 - Mastodon: [mastodon.technology/@jackcoble](https://mastodon.technology/@jackcoble)
+- Public Key: [hello@jackk.xyz](https://keys.openpgp.org/vks/v1/by-fingerprint/F2ADB9D9BFD71DC7D7FA2313A2C568724B324701)
 
 # Code
 The code I work on is primarily hosted on GitHub for now, but once I implement a robust backup strategy for my Gitea instance, I plan to make use of it much more.
