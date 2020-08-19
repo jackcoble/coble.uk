@@ -1,5 +1,5 @@
 # Welcome
-Welcome to my personal website! I like to write software - primarily open source. Go is currently my language of choice for back-end development, but I'm currently working my way into Rust. I can also do front-end work if required using a bit of JavaScript and Vue.
+Welcome to my personal website! I like to write software! Go is currently my language of choice for back-end development, but I'm currently working my way into Rust. I can also do front-end work if required using a bit of JavaScript and Vue.
 
 # Recent Blog Posts
 Feel free to take a read over my most recent blog posts!
