@@ -1,6 +1,6 @@
-baseURL = "https://3xpl0its.xyz/"
+baseURL = "https://jackk.xyz/"
 languageCode = "en-gb"
-title = "3xpl0its"
+title = "Jack Coble"
 
 [permalinks]
   blog = "/blog/:year/:month/:title/"
@@ -18,9 +18,6 @@ title = "3xpl0its"
   [[params.navigation]]
     name = "Links"
     url = "/links"
-  [[params.navigation]]
-    name = "Contact"
-    url = "/contact"
   [[params.navigation]]
     name = "RSS"
     url = "/index.xml"
