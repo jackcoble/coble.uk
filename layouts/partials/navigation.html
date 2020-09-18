@@ -6,16 +6,6 @@
             <h1 class="title has-text-weight-light has-text-white">
                 <a class="has-text-white" href="/">{{ .Site.Title }}</a>
             </h1>
-            <!-- Navigation -->
-            <div class="tabs is-boxed is-centered">
-                <ul>
-                    {{ range .Site.Params.navigation}}
-                    <li>
-                        <a href="{{ .url }}">{{ .name }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
         </div>
     </div>
 </div>
