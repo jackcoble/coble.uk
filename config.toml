@@ -7,17 +7,3 @@ title = "Jack Coble"
 
 [params]
   favicon = "favicon.jpg"
-
-  # Navigation
-  [[params.navigation]]
-    name = "Home"
-    url = "/"
-  [[params.navigation]]
-    name = "Blog"
-    url = "/blog"
-  [[params.navigation]]
-    name = "Links"
-    url = "/links"
-  [[params.navigation]]
-    name = "RSS"
-    url = "/index.xml"
