@@ -1,9 +1,0 @@
-baseURL = "https://coble.uk/"
-languageCode = "en-gb"
-title = "Jack Coble"
-
-[permalinks]
-  blog = "/blog/:year/:month/:title/"
-
-[params]
-  favicon = "favicon.jpg"
