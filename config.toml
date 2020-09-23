@@ -19,6 +19,9 @@ showProjectsList = true
 
 rss = true
 
+[permalinks]
+  posts = "/:year/:month/:day/:title/"
+
 [[params.social]]
 link = "https://github.com/jackcoble"
 name = "github"
