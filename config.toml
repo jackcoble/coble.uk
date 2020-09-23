@@ -20,6 +20,10 @@ showProjectsList = true
 rss = true
 
 [[params.social]]
+link = "https://github.com/jackcoble"
+name = "github"
+
+[[params.social]]
 link = "jack@coble.uk"
 name = "email"
 
