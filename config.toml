@@ -1,3 +1,26 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://coble.uk/"
+languageCode = "en-gb"
+title = "Jack Coble"
+
+theme = "cactus"
+
+[params]
+    description = "Welcome to my website! This is the place where I write about what I am working on, and everything inbetween! I'm an avid fan of open source software, and like to contribute where I can."
+
+    mainSection = "posts"
+
+    showAllPostsOnHomePage = false
+    postsOnHomePage = 5
+
+    showProjectsList = true
+    projectsUrl = "https://github.com/jackcoble"
+
+    rss = true
+
+    [[params.social]]
+        name = "email"
+        link = "jack@coble.uk"
+
+     [[params.social]]
+        name = "keybase"
+        link = "https://keybase.io/jackcoble"
