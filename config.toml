@@ -40,8 +40,3 @@ weight = 1
 name = "All posts"
 url = "/posts"
 weight = 2
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
