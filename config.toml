@@ -5,7 +5,7 @@ title = "Jack Coble"
 theme = "cactus"
 
 [params]
-description = "Welcome to my website! This is the place where I write about what I am working on, and everything inbetween! I'm an avid fan of open source software, and like to contribute where I can."
+description = "Welcome to my website! This is the place where I write about what I am working on, and everything inbetween! I love to write software and contribute to open source whenever I can!"
 
 mainSection = "posts"
 
@@ -30,6 +30,10 @@ name = "email"
 [[params.social]]
 link = "https://keybase.io/jackcoble"
 name = "keybase"
+
+[[params.social]]
+link = "/index.xml"
+name = "rss"
 
 [[menu.main]]
 name = "Home"
