@@ -5,22 +5,39 @@ title = "Jack Coble"
 theme = "cactus"
 
 [params]
-    description = "Welcome to my website! This is the place where I write about what I am working on, and everything inbetween! I'm an avid fan of open source software, and like to contribute where I can."
+description = "Welcome to my website! This is the place where I write about what I am working on, and everything inbetween! I'm an avid fan of open source software, and like to contribute where I can."
 
-    mainSection = "posts"
+mainSection = "posts"
 
-    showAllPostsOnHomePage = false
-    postsOnHomePage = 5
+postsOnHomePage = 5
+showAllPostsOnHomePage = false
 
-    showProjectsList = true
-    projectsUrl = "https://github.com/jackcoble"
+colortheme = "dark"
 
-    rss = true
+projectsUrl = "https://github.com/jackcoble"
+showProjectsList = true
 
-    [[params.social]]
-        name = "email"
-        link = "jack@coble.uk"
+rss = true
 
-     [[params.social]]
-        name = "keybase"
-        link = "https://keybase.io/jackcoble"
+[[params.social]]
+link = "jack@coble.uk"
+name = "email"
+
+[[params.social]]
+link = "https://keybase.io/jackcoble"
+name = "keybase"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
