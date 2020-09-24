@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jackcoble
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://coble.uk
+  * I am jackcoble (https://keybase.io/jackcoble) on keybase.
+  * I have a public key ASDZtaXWM_pQ9JQycVUsuQ5zxVsCi4eGYPVXYgFjXRHfxQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120eab74ef8435c8ee11e9c671b12d1e13ca61e2e0af9191d20072f7e3298c16b380a",
+      "host": "keybase.io",
+      "kid": "0120d9b5a5d633fa50f4943271552cb90e73c55b028b878660f5576201635d11dfc50a",
+      "uid": "87eb4c70596f81b03adff8b298a1b419",
+      "username": "jackcoble"
+    },
+    "merkle_root": {
+      "ctime": 1600946606,
+      "hash": "51df308e34b4c3b32a3b08d5b41c53038a9d74a1f63f2bb4851b438cf9f0b286cc700c8f569ea58d9173eb59860bd71937a13a68f5e4247d5da0e3afddae24da",
+      "hash_meta": "232004acb890fa9a90c74a45fc4daff24e5392f4d13ae7ec7f0baa95b7d277ce",
+      "seqno": 17656279
+    },
+    "service": {
+      "entropy": "QHVghDwbDsF3FcgOrmwQq0jD",
+      "hostname": "coble.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.1"
+  },
+  "ctime": 1600946629,
+  "expire_in": 504576000,
+  "prev": "823f0e41ab2b8c73062a0b471834e311373260952c7e45aac820dd539a9e3b43",
+  "seqno": 69,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2bWl1jP6UPSUMnFVLLkOc8VbAouHhmD1V2IBY10R38UKp3BheWxvYWTESpcCRcQggj8OQasrjHMGKgtHGDTjETcyYJUsfkWqyCDdU5qeO0PEIOCk7t+AiXCFmkoWiLY/NPaFYXfNxU6MijWk9qfZp1oCAgHCo3NpZ8RA9Th7EDr+OBKTzRCmaI2lJv1JtcVLm7ikztZem7KrHQvAyy/olOk/uK7rFvQVZM/MBWS32ScS0bLhterdjE/WCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKmdDAGTj3UNxcloRrvk6nYq5f17+uBuqW5tK5cuCPrqo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jackcoble
+
+==================================================================
