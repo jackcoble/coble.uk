@@ -2,6 +2,7 @@ baseURL = "https://coble.uk/"
 languageCode = "en-gb"
 title = "Jack Coble"
 publishDir = "_site"
+staticDir = "static"
 
 theme = "cactus"
 
