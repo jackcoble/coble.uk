@@ -1,7 +1,6 @@
 ---
 title: "Optimising my Nextcloud server"
-date: 2020-09-24T17:44:23+01:00
-draft: true
+date: 2020-09-25T11:13:07+01:00
 ---
 
 So after writing yesterday's post, I got to thinking about how I could further optimise my Nextcloud instance. To find out what I could do to optimise it, I decided to look at any "Security & setup warnings" and then got to work. 
