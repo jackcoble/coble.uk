@@ -4,16 +4,6 @@
           "name": "Feirm",
           "url": "https://feirm.com",
           "desc": "Privacy for everyone."
-       },
-       {
-          "name": "Upload",
-          "url": "https://github.com/jackcoble/upload",
-          "desc": "A static file server."
-       },
-       {
-          "name": "Strappy",
-          "url": "https://github.com/jackcoble/strappy",
-          "desc": "A blockchain bootstrap creator."
        }
     ]
  }

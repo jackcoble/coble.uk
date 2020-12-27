@@ -25,6 +25,10 @@ rss = true
   posts = "/:year/:month/:day/:title/"
 
 [[params.social]]
+link = "https://git.coble.uk"
+name = "git"
+
+[[params.social]]
 link = "https://github.com/jackcoble"
 name = "github"
 
