@@ -6,7 +6,7 @@ date: 2020-09-25T11:13:07+01:00
 So after writing yesterday's post, I got to thinking about how I could further optimise my Nextcloud instance. To find out what I could do to optimise it, I decided to look at any "Security & setup warnings" and then got to work. 
 
 # Security & setup warnings
-![Optimisations](https://s.coble.uk/2020-09-24/nextcloud-optimisations.png)
+![Optimisations](/img/2020-09-24/nextcloud-optimisations.png)
 
 If you wish to find out any security and setup warnings for yourself on your own instance, you can get to it by visiting Settings > Administration > Overview. Give it a few seconds to do a scan and it should return if you have any improvements to make!
 
@@ -41,12 +41,12 @@ nextcloud.coble.uk {
 
 I'll go ahead and restart my Caddy reverse proxy, login to Nextcloud and then visit the Overview page. Tada, all checks passed! :)
 
-![No Warnings](https://s.coble.uk/2020-09-24/2020-09-24_18-07.png)
+![No Warnings](/img/2020-09-24/2020-09-24_18-07.png)
 
 # Nextcloud Security Scan
 If you are after a more in-depth breakdown about the security of your Nextcloud instance, you can run it through the [Nextcloud Security Scan](https://scan.nextcloud.com/). You put in the URL of your instance and then it will run a series of checks. Here is the outcome against my instance.
 
-![Security Scan](https://s.coble.uk/2020-09-24/2020-09-24_18-13.png)
+![Security Scan](/img/2020-09-24/2020-09-24_18-13.png)
 
 # Configuring background jobs
 This is more of a performance optimisation, but an important one nonetheless. By default, Nextcloud relies on AJAX to execute background jobs. This means that for each page you visit on your Nextcloud instance, one task will be executed. This isn't really efficient, so we make use of the Cron scheduler instead to execute tasks at a set interval.
@@ -71,6 +71,6 @@ cron:
 
 All I had to do was bring down my Nextcloud instance and then bring it up again with `docker-compose up -d`, and I had Cron scheduling working right away for Nextcloud. Hopefully I should be a bit of a performance gain now that AJAX isn't being used! :)
 
-![Cron](https://s.coble.uk/2020-09-24/2020-09-24_18-24.png)
+![Cron](/img/2020-09-24/2020-09-24_18-24.png)
 
 That is all for the optimisations in this post. Hopefully you found some of it useful! As time goes on, if I discover any more optimisations I will be sure to document them here and take screenshots before I apply them!

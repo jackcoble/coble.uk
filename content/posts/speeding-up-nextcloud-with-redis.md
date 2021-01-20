@@ -77,4 +77,4 @@ $ KEYS *
 
 Based upon the output, I would say that it is definitely working!
 
-![Working](https://s.coble.uk/2020-09-24/2020-09-24_13-06.png)
+![Working](/img/2020-09-24/2020-09-24_13-06.png)

@@ -12,11 +12,11 @@ The plan is to keep this post short and simple. No complex explanations or anyth
 # Create and configure a new bucket
 On my Backblaze dashboard, I am going to go ahead and create a new bucket. It is important here to make sure that the files in bucket are set to "Public", as you want people to be able to view the files you are uploading.
 
-![New Bucket](https://s.coble.uk/2020-09-23/2020-09-23_17-13.png)
+![New Bucket](/img/2020-09-23/2020-09-23_17-13.png)
 
 If you chose a unique bucket name and had no issues, then a new bucket shall appear on your dashboard! I decided to call mine "sharing-files-demo" for this post.
 
-![Bucket on Dashboard](https://s.coble.uk/2020-09-23/2020-09-23_17-15.png)
+![Bucket on Dashboard](/img/2020-09-23/2020-09-23_17-15.png)
 
 Here, I would take note of the bucket endpoint as we will be needing this later on. For me, as my bucket is located in their European data centre, the endpoint would be `https://s3.eu-central-003.backblazeb2.com`. Now to make this specific to our bucket, you simply add your bucket name as a prefix to the endpoint. For example, mine would be:
 
@@ -37,7 +37,7 @@ Inside the field, you can paste the following. Of course, update the maximum amo
 }
 ```
 
-![Bucket Information](https://s.coble.uk/2020-09-23/2020-09-23_17-24.png)
+![Bucket Information](/img/2020-09-23/2020-09-23_17-24.png)
 
 Thats it, go ahead and click "Update Bucket"! The bucket configuration is all done! 🎉 We can now move onto reverse proxying our bucket!
 
@@ -61,6 +61,6 @@ Restart your Caddy server and you should be good to go!
 # Testing it all works! 🎉
 To ensure that everything is working as expected, I uploaded a file to the root of my bucket and then entered the domain I configured Caddy to use, followed by the file name itself.
 
-![It works](https://s.coble.uk/2020-09-23/2020-09-23_17-44.png)
+![It works](/img/2020-09-23/2020-09-23_17-44.png)
 
 That's all! It works! Hopefully you enjoyed this post and maybe learnt something new 

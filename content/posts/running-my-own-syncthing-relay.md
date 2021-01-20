@@ -33,4 +33,4 @@ services:
 
 And before I know it, I have a Syncthing relay that is operational! By default, the relay will automatically join the other pool of relays. If you wish to keep it private, you can do so by declaring an [empty pools list](https://docs.syncthing.net/users/strelaysrv.html#cmdoption-pools) in your additional options.
 
-![Relay page](https://s.coble.uk/2020-10-04/relay-page.png)
+![Relay page](/img/2020-10-04/relay-page.png)
