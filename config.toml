@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-gb"
 title = "Jack Coble"
-publishDir = "_site"
+publishDir = "public"
 staticDir = "static"
 
 theme = "cactus"
